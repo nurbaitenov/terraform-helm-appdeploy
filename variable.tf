@@ -20,3 +20,9 @@ variable "namespace" {
   type        = string
   default     = "default"
 }
+
+variable "wait" {
+  description = "Please provide if you want to wait or not"
+  type        = bool
+  default     = false
+}

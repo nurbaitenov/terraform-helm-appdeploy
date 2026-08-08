@@ -21,12 +21,20 @@ provider "helm" {
 }
 ```
 
+### Add below code to your main.tf file
 ```
 module name {
-    source = "nurbaitenov/appdeploy/helm
+    source     = "nurbaitenov/appdeploy/helm
     name       = "nginx-ingress-controller"
-    namespace = "default"
+    namespace  = "default"
     repository = "https://charts.bitnami.com/bitnami"
     chart      = "nginx-ingress-controller"
+    wait       = false
 }
+```
+
+### Run below command
+```
+terraform init
+teraform apply
 ```
