@@ -23,7 +23,7 @@ provider "helm" {
 
 ```
 module name {
-    source = "baitenovnur/appdeploy/helm
+    source = "nurbaitenov/appdeploy/helm
     name       = "nginx-ingress-controller"
     namespace = "default"
     repository = "https://charts.bitnami.com/bitnami"
