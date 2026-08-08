@@ -1,4 +1,4 @@
-### add below code to your provider.tf file
+### Add below code to your provider.tf file
 ```
 provider "helm" {
   kubernetes = {
